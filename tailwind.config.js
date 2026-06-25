@@ -35,7 +35,7 @@ module.exports = {
         body: ['var(--font-montserrat)', 'sans-serif'],
       },
       backgroundImage: {
-        'gold-gradient': 'linear-gradient(135deg, #d4a94f 0%, #ecd8a8 50%, #c4933a 100%)',
+        'gold-gradient': 'var(--gold-gradient)',
       },
       animation: {
         fadeIn: 'fadeIn 1.2s ease-in-out forwards',

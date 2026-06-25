@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --gold-gradient: linear-gradient(135deg, #d4a94f 0%, #ecd8a8 50%, #c4933a 100%);
+}
+
 html {
   scroll-behavior: smooth;
 }
