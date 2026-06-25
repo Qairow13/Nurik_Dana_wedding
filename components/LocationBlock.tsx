@@ -1,5 +1,11 @@
 import { FlourishDivider } from './Ornaments';
-import { VENUE_2GIS_URL, VENUE_ADDRESS, VENUE_GOOGLE_MAPS_URL, VENUE_NAME } from '@/lib/venue';
+import {
+  VENUE_2GIS_URL,
+  VENUE_ADDRESS,
+  VENUE_GOOGLE_MAPS_URL,
+  VENUE_NAME,
+  VENUE_TIME,
+} from '@/lib/venue';
 
 export default function LocationBlock() {
   return (
@@ -15,13 +21,16 @@ export default function LocationBlock() {
 
           <h3 className="mt-4 font-serif text-2xl text-gold-800">{VENUE_NAME}</h3>
           <p className="mt-2 text-sm text-gold-700 sm:text-base">{VENUE_ADDRESS}</p>
+          <p className="mt-1 text-sm font-medium text-gold-600 sm:text-base">
+            Басталу уақыты: {VENUE_TIME}
+          </p>
 
           <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
               href={VENUE_2GIS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-gold-400 px-5 py-2 text-sm font-medium text-gold-700 transition hover:bg-gold-400 hover:text-cream-50"
+              className="rounded-full bg-twogis px-5 py-2 text-sm font-medium text-cream-50 shadow shadow-twogis/30 transition hover:bg-twogis-dark"
             >
               2GIS-тен қарау
             </a>

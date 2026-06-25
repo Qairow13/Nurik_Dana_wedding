@@ -25,6 +25,10 @@ module.exports = {
           200: '#f6ecd6',
           300: '#eedcb6',
         },
+        twogis: {
+          DEFAULT: '#4F7A3D',
+          dark: '#466B36',
+        },
       },
       fontFamily: {
         serif: ['var(--font-playfair)', 'serif'],

@@ -1,5 +1,5 @@
 import { FlourishDivider } from './Ornaments';
-import { EVENT_TIME_LABEL, getEventWeekday } from '@/lib/event';
+import { EVENT_DAY, EVENT_TIME_LABEL, EVENT_YEAR, getEventWeekday } from '@/lib/event';
 
 export default function EventDetails() {
   const weekday = getEventWeekday();
@@ -12,14 +12,14 @@ export default function EventDetails() {
 
         <div className="flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-10">
           <div className="flex flex-col items-center">
-            <span className="font-serif text-6xl leading-none sm:text-7xl">20</span>
+            <span className="font-serif text-6xl leading-none sm:text-7xl">{EVENT_DAY}</span>
             <span className="mt-1 text-sm uppercase tracking-[0.3em]">тамыз</span>
           </div>
 
           <div className="hidden h-16 w-px bg-cream-50/50 sm:block" />
 
           <div className="flex flex-col items-center text-center">
-            <span className="font-serif text-3xl sm:text-4xl">2026</span>
+            <span className="font-serif text-3xl sm:text-4xl">{EVENT_YEAR}</span>
             <span className="mt-1 text-sm uppercase tracking-[0.3em]">{weekday}</span>
           </div>
 

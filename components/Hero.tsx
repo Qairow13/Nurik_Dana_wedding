@@ -1,12 +1,13 @@
 import { FlourishDivider } from './Ornaments';
+import { EVENT_DATE_LABEL } from '@/lib/event';
 
 export default function Hero() {
   return (
     <section
-      className="relative flex min-h-[100vh] items-center justify-center overflow-hidden bg-gold-900"
+      className="relative flex min-h-[100vh] items-center justify-center overflow-hidden bg-[#2E4A20]"
       style={{
         backgroundImage:
-          "url('/images/hero.jpg'), linear-gradient(160deg, #6b4823 0%, #a8762c 45%, #6b4823 100%)",
+          "url('/images/hero.jpg'), linear-gradient(160deg, #2E4A20 0%, #4F7A3D 45%, #2E4A20 100%)",
         backgroundSize: 'cover, cover',
         backgroundPosition: 'center, center',
         backgroundRepeat: 'no-repeat, no-repeat',
@@ -34,7 +35,7 @@ export default function Hero() {
         <FlourishDivider className="animate-fadeIn animate-delay-300 mt-6 text-gold-200/90" />
 
         <p className="animate-fadeIn animate-delay-400 mt-5 text-sm uppercase tracking-[0.25em] text-cream-100 sm:text-base">
-          20 тамыз 2026
+          {EVENT_DATE_LABEL}
         </p>
       </div>
 
