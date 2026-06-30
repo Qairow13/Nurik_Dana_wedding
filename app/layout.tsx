@@ -17,8 +17,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'Нұрканат & Дана — Той салтанаты',
-  description: 'Құрметті ағайын-туыс, дос-жаран! Нұрканат пен Дананың той салтанатына шақырамыз.',
+  title: 'Нұрқанат & Дана — Той салтанаты',
+  description: 'Құрметті ағайын-туыс, дос-жаран! Нұрқанат пен Дананың той салтанатына шақырамыз.',
 };
 
 export default function RootLayout({

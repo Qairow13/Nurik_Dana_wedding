@@ -16,7 +16,7 @@ export default function Hero() {
         </h1>
 
         <div className="animate-fadeIn animate-delay-200 mt-6 flex items-center gap-3 font-serif text-2xl sm:gap-5 sm:text-4xl">
-          <span>Нұрканат</span>
+          <span>Нұрқанат</span>
           <span>&amp;</span>
           <span>Дана</span>
         </div>

@@ -22,7 +22,7 @@ export default function Home() {
       <RsvpForm />
 
       <footer className="bg-cream-50 px-6 py-8 text-center text-xs text-gold-400">
-        Нұрканат &amp; Дана — 2026
+        Нұрқанат &amp; Дана — 2026
       </footer>
     </main>
   );

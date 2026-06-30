@@ -18,7 +18,7 @@ export default function Greeting() {
 
           <p className="text-sm leading-relaxed text-gold-800 sm:text-base">
             Өміріміздегі ең қуанышты, ең есте қаларлық сәтті — жүректерін бір-біріне
-            қосқан <span className="font-semibold text-gold-700">Нұрканат</span> пен{' '}
+            қосқан <span className="font-semibold text-gold-700">Нұрқанат</span> пен{' '}
             <span className="font-semibold text-gold-700">Дананың</span> үйлену тойын —
             сіздермен бөлісуге шақырамыз.
           </p>
