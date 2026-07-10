@@ -40,21 +40,21 @@ export default function Countdown() {
   }, []);
 
   return (
-    <section className="bg-cream-100 px-6 py-16 sm:py-20">
-      <div className="mx-auto max-w-2xl text-center">
+    <section className="bg-cream-50 px-6 py-16 sm:py-24">
+      <div className="mx-auto max-w-5xl text-center">
         <p className="text-xs uppercase tracking-[0.35em] text-gold-600">Тойға дейін</p>
-        <FlourishDivider className="my-5 text-gold-400" />
+        <FlourishDivider className="mx-auto my-5 text-gold-400" />
 
-        <div className="grid grid-cols-4 gap-2 sm:gap-5">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-6">
           {UNITS.map((unit) => (
             <div
               key={unit.key}
-              className="ornament-border flex flex-col items-center rounded-xl bg-cream-50 py-4 shadow-sm shadow-gold-900/5 sm:py-6"
+              className="glass-panel flex min-h-[140px] flex-col items-center justify-center gap-2 rounded-3xl px-4 py-6"
             >
-              <span className="font-serif text-3xl text-gold-700 tabular-nums sm:text-5xl">
+              <span className="font-serif text-4xl font-semibold tracking-[0.02em] text-gold-800 tabular-nums sm:text-5xl">
                 {String(timeLeft ? timeLeft[unit.key] : 0).padStart(2, '0')}
               </span>
-              <span className="mt-1 text-[10px] uppercase tracking-wider text-gold-500 sm:text-xs">
+              <span className="text-xs uppercase tracking-[0.35em] text-gold-700 sm:text-sm">
                 {unit.label}
               </span>
             </div>

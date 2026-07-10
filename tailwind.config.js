@@ -30,6 +30,10 @@ module.exports = {
           dark: '#466B36',
         },
       },
+      boxShadow: {
+        soft: '0 24px 60px rgba(107, 72, 35, 0.08)',
+        glass: '0 18px 42px rgba(107, 72, 35, 0.1)',
+      },
       fontFamily: {
         serif: ['var(--font-playfair)', 'serif'],
         body: ['var(--font-montserrat)', 'sans-serif'],
@@ -40,6 +44,8 @@ module.exports = {
       animation: {
         fadeIn: 'fadeIn 1.2s ease-in-out forwards',
         float: 'float 6s ease-in-out infinite',
+        slideUp: 'slideUp 1s ease-out forwards',
+        scaleIn: 'scaleIn 0.9s ease-out forwards',
       },
       keyframes: {
         fadeIn: {
@@ -49,6 +55,14 @@ module.exports = {
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-10px)' },
+        },
+        slideUp: {
+          '0%': { opacity: '0', transform: 'translateY(22px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        scaleIn: {
+          '0%': { opacity: '0', transform: 'scale(0.97)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
         },
       },
     },

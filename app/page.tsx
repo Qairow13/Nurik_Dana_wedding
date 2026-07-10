@@ -1,6 +1,7 @@
 import MusicPlayer from '@/components/MusicPlayer';
 import Hero from '@/components/Hero';
 import Greeting from '@/components/Greeting';
+import PhotoGallery from '../components/PhotoGallery';
 import EventDetails from '@/components/EventDetails';
 import Countdown from '@/components/Countdown';
 import CalendarBlock from '@/components/CalendarBlock';
@@ -14,6 +15,7 @@ export default function Home() {
       <MusicPlayer />
       <Hero />
       <Greeting />
+      <PhotoGallery />
       <EventDetails />
       <Countdown />
       <CalendarBlock />

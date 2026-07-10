@@ -1,30 +1,37 @@
-import { CornerOrnament, FlourishDivider } from './Ornaments';
+import { FlourishDivider } from './Ornaments';
 
 export default function Greeting() {
   return (
-    <section className="relative bg-cream-50 px-6 py-16 sm:py-24">
-      <div className="relative mx-auto max-w-2xl">
-        <CornerOrnament className="absolute -left-2 -top-2 h-12 w-12 text-gold-400 sm:h-16 sm:w-16" />
-        <CornerOrnament className="absolute -right-2 -top-2 h-12 w-12 rotate-90 text-gold-400 sm:h-16 sm:w-16" />
-        <CornerOrnament className="absolute -bottom-2 -left-2 h-12 w-12 -rotate-90 text-gold-400 sm:h-16 sm:w-16" />
-        <CornerOrnament className="absolute -bottom-2 -right-2 h-12 w-12 rotate-180 text-gold-400 sm:h-16 sm:w-16" />
+    <section className="relative bg-cream-50 px-6 py-16 sm:py-20">
+      <div className="mx-auto max-w-6xl">
+        <div className="grid gap-10 lg:grid-cols-[1fr_0.95fr] lg:items-center">
+          <div className="space-y-6 text-center lg:text-left">
+            <p className="text-xs uppercase tracking-[0.35em] text-gold-600">Тарихымыз</p>
+            <FlourishDivider className="mx-auto h-6 w-40 text-gold-400 lg:mx-0" />
 
-        <div className="px-8 py-10 text-center sm:px-14 sm:py-12">
-          <p className="font-serif text-xl text-gold-600 sm:text-2xl">
-            Құрметті ағайын-туыс, дос-жаран!
-          </p>
+            <h2 className="font-serif text-3xl font-semibold text-gold-900 sm:text-4xl lg:text-5xl">
+              Бірге бастаған жолымыз — мәңгілікке жалғасатын әдемі ертегі.
+            </h2>
 
-          <FlourishDivider className="my-6 text-gold-400" />
+            <div className="space-y-4 text-base leading-8 text-gold-800 sm:text-lg">
+              <p>
+                Бізде әрбір сәттің өз әуені, өз иісі, өз күтімі бар. Нұрқанат пен Дананың есімі
+                бірге аталғанда, әрбір өмірлік әңгіме ерекше жылылықта жалғасады.
+              </p>
+              <p>
+                Қазір сол ерекше сәтті сіздермен бөлісіп, бірге тойлауымызға шақырамыз.
+              </p>
+            </div>
+          </div>
 
-          <p className="text-sm leading-relaxed text-gold-800 sm:text-base">
-            Өміріміздегі ең қуанышты, ең есте қаларлық сәтті — жүректерін бір-біріне
-            қосқан <span className="font-semibold text-gold-700">Нұрқанат</span> пен{' '}
-            <span className="font-semibold text-gold-700">Дананың</span> үйлену тойын —
-            сіздермен бөлісуге шақырамыз.
-          </p>
-          <p className="mt-4 text-sm leading-relaxed text-gold-800 sm:text-base">
-            Жас жұбайға ақ батаңызды беріп, тойымыздың қадірлі қонағы болуыңызды сұраймыз!
-          </p>
+          <div className="group relative overflow-hidden rounded-[28px] border border-gold-100 bg-cream-50 shadow-soft transition hover:-translate-y-1 hover:shadow-glass">
+            <img
+              src="/images/story.jpg"
+              alt="Жас жұбайлардың тарихы"
+              className="h-full w-full min-h-[320px] object-cover object-center transition duration-500 group-hover:scale-105"
+            />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-transparent" />
+          </div>
         </div>
       </div>
     </section>
